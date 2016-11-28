@@ -488,6 +488,7 @@
 				316F88C01DB4368B009946DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		316F88C11DB4368B009946DC /* Build configuration list for PBXNativeTarget "hangMan495Tests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				316F88C31DB4368B009946DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		316F88C41DB4368B009946DC /* Build configuration list for PBXNativeTarget "hangMan495UITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				316F88C61DB4368B009946DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
