@@ -27,7 +27,7 @@ class HangmanBrain {
                 
                 let randomLine = wordLines[Int(arc4random_uniform(UInt32(wordLines.count)))]
                 current_word = randomLine
-                print(randomLine)
+                //print(randomLine)
                 return randomLine
                 
             } catch { // contentsOfFile throws an error
