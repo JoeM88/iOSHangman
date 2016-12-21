@@ -15,6 +15,7 @@
 		316F88A41DB4368B009946DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316F88A21DB4368B009946DC /* LaunchScreen.storyboard */; };
 		316F88AF1DB4368B009946DC /* hangMan495Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88AE1DB4368B009946DC /* hangMan495Tests.swift */; };
 		316F88BA1DB4368B009946DC /* hangMan495UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88B91DB4368B009946DC /* hangMan495UITests.swift */; };
+		3EFF0B881E0A21E900B27CAF /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */; };
 		4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */; };
 		4551DA2F1E0A03A100294A62 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 4551DA2E1E0A03A100294A62 /* words */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		316F88B51DB4368B009946DC /* hangMan495UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hangMan495UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		316F88B91DB4368B009946DC /* hangMan495UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangMan495UITests.swift; sourceTree = "<group>"; };
 		316F88BB1DB4368B009946DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
 		4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanBrain.swift; sourceTree = "<group>"; };
 		4551DA2E1E0A03A100294A62 /* words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				316F88961DB4368B009946DC /* AppDelegate.swift */,
+				3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */,
 				316F88981DB4368B009946DC /* ViewController.swift */,
 				316F889A1DB4368B009946DC /* Main.storyboard */,
 				316F88A01DB4368B009946DC /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 				316F88971DB4368B009946DC /* AppDelegate.swift in Sources */,
 				316F889F1DB4368B009946DC /* hangMan495.xcdatamodeld in Sources */,
 				4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */,
+				3EFF0B881E0A21E900B27CAF /* SinglePlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
