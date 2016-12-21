@@ -15,6 +15,8 @@
 		316F88A41DB4368B009946DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316F88A21DB4368B009946DC /* LaunchScreen.storyboard */; };
 		316F88AF1DB4368B009946DC /* hangMan495Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88AE1DB4368B009946DC /* hangMan495Tests.swift */; };
 		316F88BA1DB4368B009946DC /* hangMan495UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88B91DB4368B009946DC /* hangMan495UITests.swift */; };
+		4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */; };
+		4551DA2F1E0A03A100294A62 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 4551DA2E1E0A03A100294A62 /* words */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		316F88B51DB4368B009946DC /* hangMan495UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hangMan495UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		316F88B91DB4368B009946DC /* hangMan495UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangMan495UITests.swift; sourceTree = "<group>"; };
 		316F88BB1DB4368B009946DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanBrain.swift; sourceTree = "<group>"; };
+		4551DA2E1E0A03A100294A62 /* words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				316F88A21DB4368B009946DC /* LaunchScreen.storyboard */,
 				316F88A51DB4368B009946DC /* Info.plist */,
 				316F889D1DB4368B009946DC /* hangMan495.xcdatamodeld */,
+				4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */,
+				4551DA2E1E0A03A100294A62 /* words */,
 			);
 			path = hangMan495;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4551DA2F1E0A03A100294A62 /* words in Resources */,
 				316F88A41DB4368B009946DC /* LaunchScreen.storyboard in Resources */,
 				316F88A11DB4368B009946DC /* Assets.xcassets in Resources */,
 				316F889C1DB4368B009946DC /* Main.storyboard in Resources */,
@@ -265,6 +272,7 @@
 				316F88991DB4368B009946DC /* ViewController.swift in Sources */,
 				316F88971DB4368B009946DC /* AppDelegate.swift in Sources */,
 				316F889F1DB4368B009946DC /* hangMan495.xcdatamodeld in Sources */,
+				4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
