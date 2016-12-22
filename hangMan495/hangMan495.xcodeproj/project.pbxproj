@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0930E602CA6DE96913DEAFA3 /* Pods_hangMan495UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDBA54604052257B85CF524 /* Pods_hangMan495UITests.framework */; };
 		316F88971DB4368B009946DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88961DB4368B009946DC /* AppDelegate.swift */; };
 		316F88991DB4368B009946DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88981DB4368B009946DC /* ViewController.swift */; };
 		316F889C1DB4368B009946DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316F889A1DB4368B009946DC /* Main.storyboard */; };
@@ -16,9 +17,13 @@
 		316F88AF1DB4368B009946DC /* hangMan495Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88AE1DB4368B009946DC /* hangMan495Tests.swift */; };
 		316F88BA1DB4368B009946DC /* hangMan495UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88B91DB4368B009946DC /* hangMan495UITests.swift */; };
 		31726F091E0B572F0094AE4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31726F081E0B572F0094AE4E /* LoginViewController.swift */; };
+		31726F0B1E0B60DF0094AE4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31726F0A1E0B60DF0094AE4E /* GoogleService-Info.plist */; };
+		31726F0D1E0B69B60094AE4E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31726F0C1E0B69B60094AE4E /* RegisterViewController.swift */; };
 		3EFF0B881E0A21E900B27CAF /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */; };
 		4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */; };
 		4551DA2F1E0A03A100294A62 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 4551DA2E1E0A03A100294A62 /* words */; };
+		C94F53B00807ABA345AB05D1 /* Pods_hangMan495Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B57639A5C13750DA1FF873 /* Pods_hangMan495Tests.framework */; };
+		DA139C6CE0209BC7A76B59BB /* Pods_hangMan495.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACFDBBF0CBEE931BDD2923 /* Pods_hangMan495.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +59,20 @@
 		316F88B91DB4368B009946DC /* hangMan495UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangMan495UITests.swift; sourceTree = "<group>"; };
 		316F88BB1DB4368B009946DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31726F081E0B572F0094AE4E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		31726F0A1E0B60DF0094AE4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31726F0C1E0B69B60094AE4E /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
 		4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanBrain.swift; sourceTree = "<group>"; };
 		4551DA2E1E0A03A100294A62 /* words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words; sourceTree = "<group>"; };
+		55ACFDBBF0CBEE931BDD2923 /* Pods_hangMan495.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hangMan495.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65572F7C42BDE300F57F91A5 /* Pods-hangMan495.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hangMan495.release.xcconfig"; path = "Pods/Target Support Files/Pods-hangMan495/Pods-hangMan495.release.xcconfig"; sourceTree = "<group>"; };
+		67B57639A5C13750DA1FF873 /* Pods_hangMan495Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hangMan495Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EB79D09DD0D1210C6AA4B8 /* Pods-hangMan495Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hangMan495Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hangMan495Tests/Pods-hangMan495Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		696BE24F56997DEED4CC087B /* Pods-hangMan495Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hangMan495Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hangMan495Tests/Pods-hangMan495Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7BDBA54604052257B85CF524 /* Pods_hangMan495UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hangMan495UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A16F45CF31991B79718012 /* Pods-hangMan495UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hangMan495UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hangMan495UITests/Pods-hangMan495UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEE28BF2FC7C55D5DEF688E2 /* Pods-hangMan495UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hangMan495UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hangMan495UITests/Pods-hangMan495UITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8F88331071DDD5233E51D28 /* Pods-hangMan495.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hangMan495.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hangMan495/Pods-hangMan495.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA139C6CE0209BC7A76B59BB /* Pods_hangMan495.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94F53B00807ABA345AB05D1 /* Pods_hangMan495Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0930E602CA6DE96913DEAFA3 /* Pods_hangMan495UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +110,8 @@
 				316F88AD1DB4368B009946DC /* hangMan495Tests */,
 				316F88B81DB4368B009946DC /* hangMan495UITests */,
 				316F88941DB4368B009946DC /* Products */,
+				C41BEF768BAD358405B35DC2 /* Pods */,
+				DCA1C0C493055E0E52CAFD1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +128,7 @@
 		316F88951DB4368B009946DC /* hangMan495 */ = {
 			isa = PBXGroup;
 			children = (
+				31726F0A1E0B60DF0094AE4E /* GoogleService-Info.plist */,
 				316F88961DB4368B009946DC /* AppDelegate.swift */,
 				3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */,
 				316F88981DB4368B009946DC /* ViewController.swift */,
@@ -118,6 +140,7 @@
 				4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */,
 				4551DA2E1E0A03A100294A62 /* words */,
 				31726F081E0B572F0094AE4E /* LoginViewController.swift */,
+				31726F0C1E0B69B60094AE4E /* RegisterViewController.swift */,
 			);
 			path = hangMan495;
 			sourceTree = "<group>";
@@ -140,6 +163,29 @@
 			path = hangMan495UITests;
 			sourceTree = "<group>";
 		};
+		C41BEF768BAD358405B35DC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8F88331071DDD5233E51D28 /* Pods-hangMan495.debug.xcconfig */,
+				65572F7C42BDE300F57F91A5 /* Pods-hangMan495.release.xcconfig */,
+				68EB79D09DD0D1210C6AA4B8 /* Pods-hangMan495Tests.debug.xcconfig */,
+				696BE24F56997DEED4CC087B /* Pods-hangMan495Tests.release.xcconfig */,
+				B1A16F45CF31991B79718012 /* Pods-hangMan495UITests.debug.xcconfig */,
+				CEE28BF2FC7C55D5DEF688E2 /* Pods-hangMan495UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCA1C0C493055E0E52CAFD1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55ACFDBBF0CBEE931BDD2923 /* Pods_hangMan495.framework */,
+				67B57639A5C13750DA1FF873 /* Pods_hangMan495Tests.framework */,
+				7BDBA54604052257B85CF524 /* Pods_hangMan495UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 316F88BE1DB4368B009946DC /* Build configuration list for PBXNativeTarget "hangMan495" */;
 			buildPhases = (
+				C1FE0DAF88126019A98FDF0A /* [CP] Check Pods Manifest.lock */,
 				316F888F1DB4368B009946DC /* Sources */,
 				316F88901DB4368B009946DC /* Frameworks */,
 				316F88911DB4368B009946DC /* Resources */,
+				AD961282AE3A465CA638EAE0 /* [CP] Embed Pods Frameworks */,
+				ED8806EED2538A952C0FAEF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 316F88C11DB4368B009946DC /* Build configuration list for PBXNativeTarget "hangMan495Tests" */;
 			buildPhases = (
+				98533D68694DC3F9F02001B7 /* [CP] Check Pods Manifest.lock */,
 				316F88A61DB4368B009946DC /* Sources */,
 				316F88A71DB4368B009946DC /* Frameworks */,
 				316F88A81DB4368B009946DC /* Resources */,
+				9DB21C8ADF436BD57CE7E6A8 /* [CP] Embed Pods Frameworks */,
+				AD2D83EE052008FC4AAA3BAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 316F88C41DB4368B009946DC /* Build configuration list for PBXNativeTarget "hangMan495UITests" */;
 			buildPhases = (
+				4699AD36886B45F853F93C88 /* [CP] Check Pods Manifest.lock */,
 				316F88B11DB4368B009946DC /* Sources */,
 				316F88B21DB4368B009946DC /* Frameworks */,
 				316F88B31DB4368B009946DC /* Resources */,
+				802299BC0826E17719A5B58F /* [CP] Embed Pods Frameworks */,
+				FCEA35197E82EBC248BA8240 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +304,7 @@
 			files = (
 				4551DA2F1E0A03A100294A62 /* words in Resources */,
 				316F88A41DB4368B009946DC /* LaunchScreen.storyboard in Resources */,
+				31726F0B1E0B60DF0094AE4E /* GoogleService-Info.plist in Resources */,
 				316F88A11DB4368B009946DC /* Assets.xcassets in Resources */,
 				316F889C1DB4368B009946DC /* Main.storyboard in Resources */,
 			);
@@ -270,6 +326,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4699AD36886B45F853F93C88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		802299BC0826E17719A5B58F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hangMan495UITests/Pods-hangMan495UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98533D68694DC3F9F02001B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB21C8ADF436BD57CE7E6A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hangMan495Tests/Pods-hangMan495Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD2D83EE052008FC4AAA3BAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hangMan495Tests/Pods-hangMan495Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD961282AE3A465CA638EAE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hangMan495/Pods-hangMan495-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1FE0DAF88126019A98FDF0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8806EED2538A952C0FAEF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hangMan495/Pods-hangMan495-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCEA35197E82EBC248BA8240 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hangMan495UITests/Pods-hangMan495UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		316F888F1DB4368B009946DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -277,6 +471,7 @@
 			files = (
 				31726F091E0B572F0094AE4E /* LoginViewController.swift in Sources */,
 				316F88991DB4368B009946DC /* ViewController.swift in Sources */,
+				31726F0D1E0B69B60094AE4E /* RegisterViewController.swift in Sources */,
 				316F88971DB4368B009946DC /* AppDelegate.swift in Sources */,
 				316F889F1DB4368B009946DC /* hangMan495.xcdatamodeld in Sources */,
 				4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */,
@@ -422,6 +617,7 @@
 		};
 		316F88BF1DB4368B009946DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F88331071DDD5233E51D28 /* Pods-hangMan495.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hangMan495/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -433,6 +629,7 @@
 		};
 		316F88C01DB4368B009946DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65572F7C42BDE300F57F91A5 /* Pods-hangMan495.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hangMan495/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -444,6 +641,7 @@
 		};
 		316F88C21DB4368B009946DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EB79D09DD0D1210C6AA4B8 /* Pods-hangMan495Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = hangMan495Tests/Info.plist;
@@ -457,6 +655,7 @@
 		};
 		316F88C31DB4368B009946DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696BE24F56997DEED4CC087B /* Pods-hangMan495Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = hangMan495Tests/Info.plist;
@@ -470,6 +669,7 @@
 		};
 		316F88C51DB4368B009946DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A16F45CF31991B79718012 /* Pods-hangMan495UITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hangMan495UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,6 +682,7 @@
 		};
 		316F88C61DB4368B009946DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE28BF2FC7C55D5DEF688E2 /* Pods-hangMan495UITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hangMan495UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

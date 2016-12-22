@@ -1,0 +1,6 @@
+framework module Pods_hangMan495UITests {
+  umbrella header "Pods-hangMan495UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
