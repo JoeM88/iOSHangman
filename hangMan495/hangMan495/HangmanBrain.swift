@@ -69,7 +69,31 @@ class HangmanBrain {
     }
     
     
+    //camouflages the word
+    
+    func camouflage(word: String) -> String{
+        
+        print (word.characters.count)
+        
+        var counter = 0;
+        var secret_word = "";
+        
+        while counter < word.characters.count{
+            
+            counter += 1;
+            secret_word += "_ "
+            
+        }
+        
+        return secret_word
+    }
+    
+
+    
 }
+
+
+
 var brain : HangmanBrain = HangmanBrain()
 
 let test = brain.generateWord()
