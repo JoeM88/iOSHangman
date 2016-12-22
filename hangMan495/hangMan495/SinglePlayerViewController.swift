@@ -51,9 +51,9 @@ class SinglePlayerViewController: UIViewController {
         
         
     }
-    @IBAction func A(_ sender: UIButton) {
+    @IBAction func letterClicked(_ sender: UIButton) {
         
-        
+        levelPasssed()
     
     }
 

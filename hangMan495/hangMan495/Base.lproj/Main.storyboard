@@ -70,135 +70,210 @@
                                 <rect key="frame" x="62" y="362" width="43" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" image="Image-1"/>
+                                <state key="normal" title="A" image="Image-1"/>
                                 <connections>
-                                    <action selector="A:" destination="2zi-1U-5NF" eventType="touchUpInside" id="5DU-Qy-Ez6"/>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="VGg-ue-9Pc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kB-ve-6Uf">
                                 <rect key="frame" x="260" y="363" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-5"/>
+                                <state key="normal" title="E" image="Image-5"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="y8t-Xb-6iY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYa-04-Idi">
                                 <rect key="frame" x="62" y="411" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-6"/>
+                                <state key="normal" title="F" image="Image-6"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="nfD-UL-5WZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r3-g5-HLv">
                                 <rect key="frame" x="116" y="411" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-7"/>
+                                <state key="normal" title="G" image="Image-7"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="eOL-y5-nR0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-4D-lxP">
                                 <rect key="frame" x="164" y="411" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-8"/>
+                                <state key="normal" title="H" image="Image-8"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="TcD-wY-PD4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="una-xR-6Oy">
                                 <rect key="frame" x="212" y="411" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-9"/>
+                                <state key="normal" title="I" image="Image-9"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="dfY-o9-jxn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX8-rT-7R9">
                                 <rect key="frame" x="260" y="411" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-10"/>
+                                <state key="normal" title="J" image="Image-10"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="n0N-Rj-H75"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loI-vu-eTO">
                                 <rect key="frame" x="62" y="459" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-11"/>
+                                <state key="normal" title="K" image="Image-11"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="htS-UW-YtF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnT-5s-TVl">
-                                <rect key="frame" x="116" y="459" width="50" height="40"/>
+                                <rect key="frame" x="116" y="459" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="L" image="Image-12"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="9cs-T0-iG8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7N-4n-y6y">
-                                <rect key="frame" x="164" y="459" width="56" height="40"/>
+                                <rect key="frame" x="164" y="459" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="M" image="Image-13"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="TA7-gJ-Rs5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-bO-dfW">
                                 <rect key="frame" x="212" y="459" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-14"/>
+                                <state key="normal" title="N" image="Image-14"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="wXN-B4-rDS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMc-zn-jhV">
-                                <rect key="frame" x="260" y="459" width="54" height="40"/>
+                                <rect key="frame" x="260" y="459" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="O" image="Image-15"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="bTP-ul-mLh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BY-4H-d8m">
                                 <rect key="frame" x="62" y="507" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-16"/>
+                                <state key="normal" title="P" image="Image-16"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="gnq-2f-Ead"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiO-zu-ySG">
-                                <rect key="frame" x="110" y="507" width="54" height="40"/>
+                                <rect key="frame" x="110" y="507" width="39" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-17"/>
+                                <state key="normal" title="Q" image="Image-17"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="8Jb-dy-Ro1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cod-DW-Qil">
                                 <rect key="frame" x="164" y="507" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-18"/>
+                                <state key="normal" title="R" image="Image-18"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="wua-rv-6yw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXG-1f-iCU">
                                 <rect key="frame" x="212" y="507" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-19"/>
+                                <state key="normal" title="S" image="Image-19"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="SsY-CI-Dlc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPu-0p-3T1">
-                                <rect key="frame" x="260" y="507" width="51" height="40"/>
+                                <rect key="frame" x="260" y="507" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="T" image="Image-20"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="ICH-yg-eRd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmP-U2-ZNx">
                                 <rect key="frame" x="164" y="559" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-22"/>
+                                <state key="normal" title="W" image="Image-22"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="qaD-sE-9G4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-Ic-Rk6">
                                 <rect key="frame" x="260" y="557" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-24"/>
+                                <state key="normal" title="Y" image="Image-24"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="Ik4-4E-B4G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHD-I7-4Ma">
                                 <rect key="frame" x="116" y="557" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-26"/>
+                                <state key="normal" title="V" image="Image-26"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="DI9-69-bR6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJi-JS-b6t">
                                 <rect key="frame" x="212" y="555" width="45" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-23"/>
+                                <state key="normal" title="X" image="Image-23"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="TQG-72-xFO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNx-u2-Y3l">
                                 <rect key="frame" x="116" y="363" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-2"/>
+                                <state key="normal" title="B" image="Image-2"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="KX2-yS-ECq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygs-xo-Qhm">
                                 <rect key="frame" x="164" y="363" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-3"/>
+                                <state key="normal" title="C" image="Image-3"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="wn8-vn-41u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U56-f8-Ahh">
                                 <rect key="frame" x="212" y="363" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-4"/>
+                                <state key="normal" title="D" image="Image-4"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="ZB8-22-nXs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEP-PM-ieQ">
                                 <rect key="frame" x="164" y="607" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-25"/>
+                                <state key="normal" title="Z" image="Image-25"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="eVL-GX-xPo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nE8-b2-ICE">
                                 <rect key="frame" x="60" y="555" width="45" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-21"/>
+                                <state key="normal" title="U" image="Image-21"/>
+                                <connections>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="pLR-VX-neS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvF-Md-0Sh">
                                 <rect key="frame" x="16" y="72" width="343" height="42"/>
