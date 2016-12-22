@@ -12,12 +12,16 @@ class SinglePlayerViewController: UIViewController {
     
     
     var brain = HangmanBrain();
+    
+    var WORD = "";
 
     @IBOutlet weak var display: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
+        levelPasssed()
         // Do any additional setup after loading the view.
     }
 
@@ -36,20 +40,21 @@ class SinglePlayerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func A(_ sender: UIButton) {
+    func levelPasssed() {
         
-       
-        let word = brain.generateWord()
-       // print(word)
-
-        display.text = word;
+        WORD = brain.generateWord()
+        // print(word)
         
-       
+        display.text = brain.camouflage(word: WORD);
         
+        print(WORD)
         
         
+    }
+    @IBAction func letterClicked(_ sender: UIButton) {
         
-        
+        levelPasssed()
+    
     }
 
 }
