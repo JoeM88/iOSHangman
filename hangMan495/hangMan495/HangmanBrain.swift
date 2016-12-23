@@ -82,9 +82,7 @@ class HangmanBrain {
             
             counter += 1;
             secret_word += "_ "
-            
         }
-        
         return secret_word
     }
     

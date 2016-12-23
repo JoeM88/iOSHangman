@@ -17,8 +17,8 @@
 		316F88AF1DB4368B009946DC /* hangMan495Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88AE1DB4368B009946DC /* hangMan495Tests.swift */; };
 		316F88BA1DB4368B009946DC /* hangMan495UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88B91DB4368B009946DC /* hangMan495UITests.swift */; };
 		31726F091E0B572F0094AE4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31726F081E0B572F0094AE4E /* LoginViewController.swift */; };
-		31726F0B1E0B60DF0094AE4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31726F0A1E0B60DF0094AE4E /* GoogleService-Info.plist */; };
 		31726F0D1E0B69B60094AE4E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31726F0C1E0B69B60094AE4E /* RegisterViewController.swift */; };
+		3EB0AC121E0DDEA300E84CAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EB0AC111E0DDEA300E84CAF /* GoogleService-Info.plist */; };
 		3EFF0B881E0A21E900B27CAF /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */; };
 		4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */; };
 		4551DA2F1E0A03A100294A62 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 4551DA2E1E0A03A100294A62 /* words */; };
@@ -59,8 +59,8 @@
 		316F88B91DB4368B009946DC /* hangMan495UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangMan495UITests.swift; sourceTree = "<group>"; };
 		316F88BB1DB4368B009946DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31726F081E0B572F0094AE4E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		31726F0A1E0B60DF0094AE4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		31726F0C1E0B69B60094AE4E /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3EB0AC111E0DDEA300E84CAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
 		4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanBrain.swift; sourceTree = "<group>"; };
 		4551DA2E1E0A03A100294A62 /* words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		316F88951DB4368B009946DC /* hangMan495 */ = {
 			isa = PBXGroup;
 			children = (
-				31726F0A1E0B60DF0094AE4E /* GoogleService-Info.plist */,
+				3EB0AC111E0DDEA300E84CAF /* GoogleService-Info.plist */,
 				316F88961DB4368B009946DC /* AppDelegate.swift */,
 				3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */,
 				316F88981DB4368B009946DC /* ViewController.swift */,
@@ -258,7 +258,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Joseph Molina";
 				TargetAttributes = {
 					316F88921DB4368B009946DC = {
@@ -304,9 +304,9 @@
 			files = (
 				4551DA2F1E0A03A100294A62 /* words in Resources */,
 				316F88A41DB4368B009946DC /* LaunchScreen.storyboard in Resources */,
-				31726F0B1E0B60DF0094AE4E /* GoogleService-Info.plist in Resources */,
 				316F88A11DB4368B009946DC /* Assets.xcassets in Resources */,
 				316F889C1DB4368B009946DC /* Main.storyboard in Resources */,
+				3EB0AC121E0DDEA300E84CAF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,8 +544,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -590,8 +592,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -610,6 +614,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

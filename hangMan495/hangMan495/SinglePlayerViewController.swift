@@ -53,7 +53,15 @@ class SinglePlayerViewController: UIViewController {
     }
     @IBAction func letterClicked(_ sender: UIButton) {
         
-        levelPasssed()
+        //levelPasssed()
+        
+        var letterClicked = (sender.currentTitle!).lowercased()
+       
+        var character = [Character](letterClicked.characters)
+    
+        
+        
+        print(brain.checkLetter(letter:character[character.startIndex]))
     
     }
 
