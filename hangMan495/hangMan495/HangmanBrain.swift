@@ -73,7 +73,7 @@ class HangmanBrain {
     
     func camouflage(word: String) -> String{
         
-        print (word.characters.count)
+       // print (word.characters.count)
         
         var counter = 0;
         var secret_word = "";
@@ -92,7 +92,7 @@ class HangmanBrain {
     
         var temp_word = "";
         
-        print(word.characters.count)
+        //print(word.characters.count)
         
         for index in 0...((word.characters.count)-1){
         
