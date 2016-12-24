@@ -45,6 +45,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LogOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcN-JU-aOe">
+                                <rect key="frame" x="301" y="85" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.63972080799999997" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -52,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="-521"/>
+            <point key="canvasLocation" x="488.80000000000001" y="-521.28935532233891"/>
         </scene>
         <!--Single Player-->
         <scene sceneID="lXD-6Y-gHX">
@@ -344,6 +351,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginAction:" destination="M9X-5Q-rCf" eventType="touchUpInside" id="iZF-Ap-N85"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="2qH-RB-6Ug"/>
                                 </connections>
                             </button>
@@ -366,6 +374,10 @@
                         <accessibility key="accessibilityConfiguration" label="Login"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Un-zB-G0i"/>
+                    <connections>
+                        <outlet property="emailLoginTextField" destination="7xO-2v-AoA" id="RgT-xS-FAk"/>
+                        <outlet property="passwordLoginTextField" destination="FDp-Dn-Q91" id="vgb-li-PNG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaD-U8-7WL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
