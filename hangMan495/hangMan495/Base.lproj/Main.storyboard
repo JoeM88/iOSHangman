@@ -12,7 +12,7 @@
         <!--Main Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Main Screen" id="BYZ-38-t0r" customClass="ViewController" customModule="hangMan495" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreen" title="Main Screen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="hangMan495" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,6 +45,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5h-1O-zeW">
+                                <rect key="frame" x="312" y="76" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.63972080799999997" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acz-Dy-Uie"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -52,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="-521"/>
+            <point key="canvasLocation" x="488.80000000000001" y="-521.28935532233891"/>
         </scene>
         <!--Single Player-->
         <scene sceneID="lXD-6Y-gHX">
@@ -314,7 +324,7 @@
         <!--LoginController-->
         <scene sceneID="PMF-W8-ve4">
             <objects>
-                <viewController title="LoginController" id="M9X-5Q-rCf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreen" title="LoginController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M9X-5Q-rCf" customClass="LoginViewController" customModule="hangMan495" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yDc-HB-atg"/>
                         <viewControllerLayoutGuide type="bottom" id="mvx-DU-yqf"/>
@@ -323,7 +333,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7xO-2v-AoA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7xO-2v-AoA">
                                 <rect key="frame" x="71" y="211" width="232" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -344,6 +354,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginAction:" destination="M9X-5Q-rCf" eventType="touchUpInside" id="iZF-Ap-N85"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="2qH-RB-6Ug"/>
                                 </connections>
                             </button>
@@ -351,13 +362,6 @@
                                 <rect key="frame" x="67" y="75" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbY-n3-2st">
-                                <rect key="frame" x="145" y="28" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lls-d0-6X0">
                                 <rect key="frame" x="159" y="442" width="57" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -373,15 +377,19 @@
                         <accessibility key="accessibilityConfiguration" label="Login"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Un-zB-G0i"/>
+                    <connections>
+                        <outlet property="emailLoginTextField" destination="7xO-2v-AoA" id="RgT-xS-FAk"/>
+                        <outlet property="passwordLoginTextField" destination="FDp-Dn-Q91" id="vgb-li-PNG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaD-U8-7WL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-442.5" y="-521.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Register-->
         <scene sceneID="qEw-bK-1j6">
             <objects>
-                <viewController id="L7W-hJ-VIR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterScreen" title="Register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L7W-hJ-VIR" customClass="RegisterViewController" customModule="hangMan495" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ffb-UM-Dxb"/>
                         <viewControllerLayoutGuide type="bottom" id="7bg-Tf-Lkl"/>
@@ -394,14 +402,7 @@
                                 <rect key="frame" x="78" y="100" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9o-Yc-T8X">
-                                <rect key="frame" x="166" y="43" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eB6-B2-Tfd">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eB6-B2-Tfd">
                                 <rect key="frame" x="101" y="255" width="173" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -421,10 +422,17 @@
                                 <state key="normal" title="REGISTER">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountAction:" destination="L7W-hJ-VIR" eventType="touchUpInside" id="ZBg-7W-2Cz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63972080801548969" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="eB6-B2-Tfd" id="LEC-ea-meW"/>
+                        <outlet property="passwordTextField" destination="Iuv-zh-SLb" id="9Vo-bY-9Ad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCM-0s-gYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
