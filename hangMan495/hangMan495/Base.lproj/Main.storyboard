@@ -82,7 +82,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="A" image="Image-1"/>
                                 <connections>
-                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="VGg-ue-9Pc"/>
+                                    <action selector="aButton:" destination="2zi-1U-5NF" eventType="touchUpInside" id="KzR-5h-9PQ"/>
+                                    <action selector="letterClicked:" destination="2zi-1U-5NF" eventType="touchUpInside" id="8OS-te-Ex3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kB-ve-6Uf">

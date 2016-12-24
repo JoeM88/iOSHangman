@@ -70,7 +70,11 @@ class SinglePlayerViewController: UIViewController {
         
       
         print(letterFound)
+    }
     
+    @IBAction func aButton(_ sender: UIButton) {
+        
+        sender.setImage(UIImage(named: "Image-27"), for: .normal)
     }
 
 }

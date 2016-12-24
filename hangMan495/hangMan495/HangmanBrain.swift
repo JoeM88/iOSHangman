@@ -87,6 +87,7 @@ class HangmanBrain {
     }
     
     
+    //Places a space between each character in a string
     func spaceWordOut(word: String) -> String{
     
         var temp_word = "";
@@ -98,21 +99,19 @@ class HangmanBrain {
             let word_idx = word.index(word.startIndex, offsetBy: index)
         
             temp_word += String(word[word_idx]) + " "
-        
         }
-        
         return temp_word;
     }
     
     
+    //Displays the words that the user guesses correctly
     func revealLetter(word: String, secret_word: String, letter: Character ) -> String{
-        
-        
+    
         var temp_secret_word = ""
 
         for i in 0...(word.characters.count - 1){
         
-            var idx = word.index(word.startIndex, offsetBy: i)
+            let idx = word.index(word.startIndex, offsetBy: i)
             
             if word[idx] == letter{
                 
@@ -134,8 +133,6 @@ class HangmanBrain {
     }
     
 }
-
-
 
 var brain : HangmanBrain = HangmanBrain()
 
