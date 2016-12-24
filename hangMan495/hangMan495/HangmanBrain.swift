@@ -81,12 +81,57 @@ class HangmanBrain {
         while counter < word.characters.count{
             
             counter += 1;
-            secret_word += "_ "
+            secret_word += "_"
         }
         return secret_word
     }
     
+    
+    func spaceWordOut(word: String) -> String{
+    
+        var temp_word = "";
+        
+        print(word.characters.count)
+        
+        for index in 0...((word.characters.count)-1){
+        
+            let word_idx = word.index(word.startIndex, offsetBy: index)
+        
+            temp_word += String(word[word_idx]) + " "
+        
+        }
+        
+        return temp_word;
+    }
+    
+    
+    func revealLetter(word: String, secret_word: String, letter: Character ) -> String{
+        
+        
+        var temp_secret_word = ""
 
+        for i in 0...(word.characters.count - 1){
+        
+            var idx = word.index(word.startIndex, offsetBy: i)
+            
+            if word[idx] == letter{
+                
+                temp_secret_word += String(letter)
+            }
+            else{
+                
+                if(secret_word[idx] != "_")
+                {
+                    temp_secret_word += String(secret_word[idx])
+                }
+                else{
+                     temp_secret_word += "_"
+                }
+            }
+      }
+    return temp_secret_word
+    
+    }
     
 }
 

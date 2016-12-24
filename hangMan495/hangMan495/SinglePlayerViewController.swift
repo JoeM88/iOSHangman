@@ -14,6 +14,7 @@ class SinglePlayerViewController: UIViewController {
     var brain = HangmanBrain();
     
     var WORD = "";
+    var CAMOUFLAGE_WORD = ""
 
     @IBOutlet weak var display: UILabel!
     
@@ -45,7 +46,8 @@ class SinglePlayerViewController: UIViewController {
         WORD = brain.generateWord()
         // print(word)
         
-        display.text = brain.camouflage(word: WORD);
+        CAMOUFLAGE_WORD = brain.camouflage(word: WORD)
+        display.text = brain.spaceWordOut(word: CAMOUFLAGE_WORD)
         
         print(WORD)
         
@@ -59,9 +61,15 @@ class SinglePlayerViewController: UIViewController {
        
         var character = [Character](letterClicked.characters)
     
+        let letterFound = brain.checkLetter(letter:character[character.startIndex])
         
         
-        print(brain.checkLetter(letter:character[character.startIndex]))
+        CAMOUFLAGE_WORD = brain.revealLetter(word: WORD, secret_word: CAMOUFLAGE_WORD, letter: (letter:character[character.startIndex]))
+        
+        display.text = brain.spaceWordOut(word: CAMOUFLAGE_WORD);
+        
+      
+        print(letterFound)
     
     }
 
