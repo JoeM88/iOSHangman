@@ -25,6 +25,7 @@
 		3EFF0B881E0A21E900B27CAF /* SinglePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */; };
 		4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */; };
 		4551DA2F1E0A03A100294A62 /* words in Resources */ = {isa = PBXBuildFile; fileRef = 4551DA2E1E0A03A100294A62 /* words */; };
+		4551DA3C1E11C3CD00294A62 /* MultiplayerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4551DA3B1E11C3CD00294A62 /* MultiplayerInput.swift */; };
 		C94F53B00807ABA345AB05D1 /* Pods_hangMan495Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B57639A5C13750DA1FF873 /* Pods_hangMan495Tests.framework */; };
 		DA139C6CE0209BC7A76B59BB /* Pods_hangMan495.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACFDBBF0CBEE931BDD2923 /* Pods_hangMan495.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerViewController.swift; sourceTree = "<group>"; };
 		4551DA2C1E0A02B900294A62 /* HangmanBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanBrain.swift; sourceTree = "<group>"; };
 		4551DA2E1E0A03A100294A62 /* words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words; sourceTree = "<group>"; };
+		4551DA3B1E11C3CD00294A62 /* MultiplayerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerInput.swift; sourceTree = "<group>"; };
 		55ACFDBBF0CBEE931BDD2923 /* Pods_hangMan495.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hangMan495.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65572F7C42BDE300F57F91A5 /* Pods-hangMan495.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hangMan495.release.xcconfig"; path = "Pods/Target Support Files/Pods-hangMan495/Pods-hangMan495.release.xcconfig"; sourceTree = "<group>"; };
 		67B57639A5C13750DA1FF873 /* Pods_hangMan495Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hangMan495Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 				316F88981DB4368B009946DC /* ViewController.swift */,
 				316F889A1DB4368B009946DC /* Main.storyboard */,
 				313056E61E1101AF00528E74 /* ResetPasswordViewController.swift */,
+				4551DA3B1E11C3CD00294A62 /* MultiplayerInput.swift */,
 				316F88A01DB4368B009946DC /* Assets.xcassets */,
 				316F88A21DB4368B009946DC /* LaunchScreen.storyboard */,
 				316F88A51DB4368B009946DC /* Info.plist */,
@@ -477,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31726F091E0B572F0094AE4E /* LoginViewController.swift in Sources */,
+				4551DA3C1E11C3CD00294A62 /* MultiplayerInput.swift in Sources */,
 				316F88991DB4368B009946DC /* ViewController.swift in Sources */,
 				31726F0D1E0B69B60094AE4E /* RegisterViewController.swift in Sources */,
 				313056E71E1101AF00528E74 /* ResetPasswordViewController.swift in Sources */,
