@@ -63,7 +63,7 @@ class SinglePlayerViewController: UIViewController {
         
 
         
-        let letterFound = brain.checkLetter(letter:character[character.startIndex])
+        //let letterFound = brain.checkLetter(letter:character[character.startIndex])
         
         
         CAMOUFLAGE_WORD = brain.revealLetter(word: WORD, secret_word: CAMOUFLAGE_WORD, letter: (letter:character[character.startIndex]))
@@ -81,85 +81,217 @@ class SinglePlayerViewController: UIViewController {
         
         var letterClicked = (sender.currentTitle!).lowercased()
         var character = [Character](letterClicked.characters)
-        let letter = character[character.startIndex]
+        let letter = String(character[character.startIndex])
+        
+         let letterFound = brain.checkLetter(letter:character[character.startIndex])
         
         if letter == "a"{//saturation and tint for color all lowered on actual image not here
-             sender.setImage(UIImage(named: "Image-27"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-27"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "a_red"), for: .normal)
+            }
         }
         else if letter == "b"{
-            sender.setImage(UIImage(named: "Image-28"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-28"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "b_red"), for: .normal)
+            }
         }
         else if letter == "c"{
-            sender.setImage(UIImage(named: "Image-29"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-29"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "c_red"), for: .normal)
+            }
         }
         else if letter == "d"{
-            sender.setImage(UIImage(named: "Image-30"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-30"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "d_red"), for: .normal)
+            }
         }
         else if letter == "e"{
-            sender.setImage(UIImage(named: "Image-31"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-31"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "e_red"), for: .normal)
+            }
         }
         else if letter == "f"{
-            sender.setImage(UIImage(named: "Image-32"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-32"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "f_red"), for: .normal)
+            }
         }
         else if letter == "g"{
-            sender.setImage(UIImage(named: "Image-33"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-33"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "g_red"), for: .normal)
+            }
         }
         else if letter == "h"{
-            sender.setImage(UIImage(named: "Image-34"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-34"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "h_red"), for: .normal)
+            }
         }
         else if letter == "i"{
-            sender.setImage(UIImage(named: "Image-35"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-35"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "i_red"), for: .normal)
+            }
         }
         else if letter == "j"{
-            sender.setImage(UIImage(named: "Image-36"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-36"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "j_red"), for: .normal)
+            }
         }
         else if letter == "k"{
-            sender.setImage(UIImage(named: "Image-37"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-37"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "k_red"), for: .normal)
+            }
         }
         else if letter == "l"{
-            sender.setImage(UIImage(named: "Image-38"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-38"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "l_red"), for: .normal)
+            }
         }
         else if letter == "m"{
-            sender.setImage(UIImage(named: "Image-39"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-39"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "m_red"), for: .normal)
+            }
         }
         else if letter == "n"{
-            sender.setImage(UIImage(named: "Image-40"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-40"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "n_red"), for: .normal)
+            }
         }
         else if letter == "o"{
-            sender.setImage(UIImage(named: "Image-41"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-41"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "o_red"), for: .normal)
+            }
         }
         else if letter == "p"{
-            sender.setImage(UIImage(named: "Image-42"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-42"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "p_red"), for: .normal)
+            }
         }
         else if letter == "q"{
-            sender.setImage(UIImage(named: "Image-43"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-43"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "q_red"), for: .normal)
+            }
         }
         else if letter == "r"{
-            sender.setImage(UIImage(named: "Image-44"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-44"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "r_red"), for: .normal)
+            }
         }
         else if letter == "s"{
-            sender.setImage(UIImage(named: "Image-45"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-45"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "s_red"), for: .normal)
+            }
         }
         else if letter == "t"{
-            sender.setImage(UIImage(named: "Image-46"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-46"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "t_red"), for: .normal)
+            }
         }
         else if letter == "u"{
-            sender.setImage(UIImage(named: "Image-47"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-47"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "u_red"), for: .normal)
+            }
         }
         else if letter == "v"{
-            sender.setImage(UIImage(named: "Image-52"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-52"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "v_red"), for: .normal)
+            }
         }
         else if letter == "w"{
-            sender.setImage(UIImage(named: "Image-48"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-48"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "w_red"), for: .normal)
+            }
         }
         else if letter == "x"{
-            sender.setImage(UIImage(named: "Image-49"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-49"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "x_red"), for: .normal)
+            }
         }
         else if letter == "y"{
-            sender.setImage(UIImage(named: "Image-50"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-50"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "y_red"), for: .normal)
+            }
         }
         else if letter == "z"{
-            sender.setImage(UIImage(named: "Image-51"), for: .normal)
+            if letterFound{
+                sender.setImage(UIImage(named: "Image-51"), for: .normal)
+            }
+            else{
+                sender.setImage(UIImage(named: "z_red"), for: .normal)
+            }
         }
         print(letter)
         

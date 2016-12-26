@@ -41,15 +41,16 @@ class HangmanBrain {
     //Returns false is the letter has been guessed already or if the letter is not in the word
     func checkLetter(letter: Character) -> Bool
     {
-        if(discovered_words.contains(letter))
+        let letter_lowercased = Character(String(letter).lowercased())
+        if(discovered_words.contains(letter_lowercased))
         {
             return false;
         }
-        guessed_letters.append(letter)
-        if(current_word!.contains(String(letter)))
+        guessed_letters.append(letter_lowercased)
+        if(current_word!.contains(String(letter_lowercased)))
         {
             
-            discovered_words.append(letter)
+            discovered_words.append(letter_lowercased)
             return true;
         }
         return false;
@@ -113,9 +114,9 @@ class HangmanBrain {
         
             let idx = word.index(word.startIndex, offsetBy: i)
             
-            if word[idx] == letter{
+            if String(word[idx]).lowercased() == String(letter).lowercased(){
                 
-                temp_secret_word += String(letter)
+                temp_secret_word += String(word[idx])
             }
             else{
                 
