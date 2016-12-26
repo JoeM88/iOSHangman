@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0930E602CA6DE96913DEAFA3 /* Pods_hangMan495UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDBA54604052257B85CF524 /* Pods_hangMan495UITests.framework */; };
+		313056E71E1101AF00528E74 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313056E61E1101AF00528E74 /* ResetPasswordViewController.swift */; };
 		316F88971DB4368B009946DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88961DB4368B009946DC /* AppDelegate.swift */; };
 		316F88991DB4368B009946DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F88981DB4368B009946DC /* ViewController.swift */; };
 		316F889C1DB4368B009946DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316F889A1DB4368B009946DC /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		313056E61E1101AF00528E74 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		316F88931DB4368B009946DC /* hangMan495.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hangMan495.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		316F88961DB4368B009946DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		316F88981DB4368B009946DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				3EFF0B871E0A21E900B27CAF /* SinglePlayerViewController.swift */,
 				316F88981DB4368B009946DC /* ViewController.swift */,
 				316F889A1DB4368B009946DC /* Main.storyboard */,
+				313056E61E1101AF00528E74 /* ResetPasswordViewController.swift */,
 				316F88A01DB4368B009946DC /* Assets.xcassets */,
 				316F88A21DB4368B009946DC /* LaunchScreen.storyboard */,
 				316F88A51DB4368B009946DC /* Info.plist */,
@@ -476,6 +479,7 @@
 				31726F091E0B572F0094AE4E /* LoginViewController.swift in Sources */,
 				316F88991DB4368B009946DC /* ViewController.swift in Sources */,
 				31726F0D1E0B69B60094AE4E /* RegisterViewController.swift in Sources */,
+				313056E71E1101AF00528E74 /* ResetPasswordViewController.swift in Sources */,
 				316F88971DB4368B009946DC /* AppDelegate.swift in Sources */,
 				316F889F1DB4368B009946DC /* hangMan495.xcdatamodeld in Sources */,
 				4551DA2D1E0A02B900294A62 /* HangmanBrain.swift in Sources */,

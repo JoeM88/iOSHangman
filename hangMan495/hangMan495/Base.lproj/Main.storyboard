@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Ip-wy-xRz">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Ip-wy-xRz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -381,7 +381,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="M9X-5Q-rCf" eventType="touchUpInside" id="iZF-Ap-N85"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="2qH-RB-6Ug"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hangmanLaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="8hE-zd-c2q">
@@ -398,6 +397,16 @@
                                     <segue destination="L7W-hJ-VIR" kind="show" id="FB4-hF-ywZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOf-KM-uhr">
+                                <rect key="frame" x="133" y="522" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OwB-Dq-2MK" kind="show" id="4X8-Uh-mxu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.32800322411489991" green="0.50380564486981161" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration" label="Login"/>
@@ -411,6 +420,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaD-U8-7WL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-442.5" y="-521.5"/>
+        </scene>
+        <!--Reset Password-->
+        <scene sceneID="C0d-9P-9GN">
+            <objects>
+                <viewController storyboardIdentifier="ResetPassword" title="Reset Password" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OwB-Dq-2MK" customClass="ResetPasswordViewController" customModule="hangMan495" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RRl-rh-DMc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kqp-xF-VYf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="28L-D4-ZMD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hangmanLaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="Bof-fo-3gE">
+                                <rect key="frame" x="67" y="64" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvk-d6-76e">
+                                <rect key="frame" x="102" y="293" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZB4-EK-hl4">
+                                <rect key="frame" x="133" y="364" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetPasswordAction:" destination="OwB-Dq-2MK" eventType="touchUpInside" id="ME4-Fo-y1R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082450184925666137" green="0.28072886733919256" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="resetPasswordTextField" destination="cvk-d6-76e" id="DJh-cY-lhh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3P-rR-0t1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="256"/>
         </scene>
         <!--Register-->
         <scene sceneID="qEw-bK-1j6">
@@ -462,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCM-0s-gYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-442" y="367"/>
+            <point key="canvasLocation" x="-839" y="256"/>
         </scene>
     </scenes>
     <resources>
