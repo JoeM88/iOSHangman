@@ -130,7 +130,7 @@ class SinglePlayerViewController: UIViewController {
         
         
         
-        SCORE += 1
+        SCORE += 10
         
         let stringScore = String(SCORE)
         scoreImageView.text = "Score: " + stringScore
