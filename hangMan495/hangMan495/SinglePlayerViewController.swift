@@ -120,6 +120,16 @@ class SinglePlayerViewController: UIViewController {
     
     func playerWinsLever(WORDS_GUESSED:Int, sender: UIButton){
         
+        
+        let alertController = UIAlertController(title: "You Passed The Level!", message: ("The word you guessed was: " + WORD), preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(defaultAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+        
+        
         SCORE += 1
         
         let stringScore = String(SCORE)
@@ -186,6 +196,13 @@ class SinglePlayerViewController: UIViewController {
             }
             else if LIVES == 4{
                 hangManImage.image =  UIImage(named:"1-7");
+                
+                let alertController = UIAlertController(title: "Sorry, You Lost!", message: ("The word was: " + WORD), preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
             }
         }
         
