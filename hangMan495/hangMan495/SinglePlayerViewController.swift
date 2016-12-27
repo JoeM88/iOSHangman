@@ -83,35 +83,35 @@ class SinglePlayerViewController: UIViewController {
             LIVES -= 1
             
             if LIVES == 9{
-                hangManImage.image =  UIImage(named:"2");
+                hangManImage.image =  UIImage(named:"1-2");
             }
             else if LIVES == 8{
-                hangManImage.image =  UIImage(named:"3");
+                hangManImage.image =  UIImage(named:"1-3");
             }
             else if LIVES == 7{
-                hangManImage.image =  UIImage(named:"4");
+                hangManImage.image =  UIImage(named:"1-4");
             }
             else if LIVES == 6{
-                hangManImage.image =  UIImage(named:"5");
+                hangManImage.image =  UIImage(named:"1-5");
             }
             else if LIVES == 5{
-                hangManImage.image =  UIImage(named:"6");
+                hangManImage.image =  UIImage(named:"1-6");
             }
             else if LIVES == 4{
-                hangManImage.image =  UIImage(named:"7");
+                hangManImage.image =  UIImage(named:"1-7");
             }
-            else if LIVES == 3{
-                hangManImage.image =  UIImage(named:"8");
-            }
-            else if LIVES == 2{
-                hangManImage.image =  UIImage(named:"9");
-            }
-            else if LIVES == 1{
-                hangManImage.image =  UIImage(named:"10");
-            }
-            else if LIVES == 0{
-                hangManImage.image =  UIImage(named:"11");
-            }
+//            else if LIVES == 3{
+//                hangManImage.image =  UIImage(named:"1-8");
+//            }
+//            else if LIVES == 2{
+//                hangManImage.image =  UIImage(named:"9");
+//            }
+//            else if LIVES == 1{
+//                hangManImage.image =  UIImage(named:"10");
+//            }
+//            else if LIVES == 0{
+//                hangManImage.image =  UIImage(named:"11");
+//            }
         }
         
     }
