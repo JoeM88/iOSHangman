@@ -79,13 +79,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvF-Md-0Sh">
-                                <rect key="frame" x="16" y="72" width="343" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTe-bx-h0K">
                                 <rect key="frame" x="69" y="362" width="43" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -332,15 +325,56 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-1" translatesAutoresizingMaskIntoConstraints="NO" id="ru4-J1-geK">
-                                <rect key="frame" x="67" y="72" width="240" height="338"/>
+                                <rect key="frame" x="67" y="52" width="240" height="399"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wht-ix-Ude">
+                                <rect key="frame" x="219" y="316" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvF-Md-0Sh">
+                                <rect key="frame" x="16" y="59" width="343" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="A" destination="kTe-bx-h0K" id="UXG-zS-MQT"/>
+                        <outlet property="B" destination="tNx-u2-Y3l" id="qeW-2U-srP"/>
+                        <outlet property="C" destination="ygs-xo-Qhm" id="2dF-EZ-mgB"/>
+                        <outlet property="D" destination="U56-f8-Ahh" id="3bP-U1-rPZ"/>
+                        <outlet property="E" destination="6kB-ve-6Uf" id="Xwe-RX-gWN"/>
+                        <outlet property="F" destination="KYa-04-Idi" id="lzu-7t-NDU"/>
+                        <outlet property="G" destination="3r3-g5-HLv" id="dwh-TO-f94"/>
+                        <outlet property="H" destination="cy7-4D-lxP" id="DHX-sL-lYB"/>
+                        <outlet property="I" destination="una-xR-6Oy" id="1AL-Fp-tKC"/>
+                        <outlet property="J" destination="JX8-rT-7R9" id="tCD-BF-SF8"/>
+                        <outlet property="K" destination="loI-vu-eTO" id="Vat-Sb-1qL"/>
+                        <outlet property="L" destination="rnT-5s-TVl" id="4Rv-TZ-KBj"/>
+                        <outlet property="M" destination="k7N-4n-y6y" id="O47-6f-cH7"/>
+                        <outlet property="N" destination="pSw-bO-dfW" id="8q2-e2-nQP"/>
+                        <outlet property="O" destination="JMc-zn-jhV" id="pF7-Xp-gpF"/>
+                        <outlet property="P" destination="2BY-4H-d8m" id="SpB-2F-tGY"/>
+                        <outlet property="Q" destination="YiO-zu-ySG" id="zMM-zw-brx"/>
+                        <outlet property="R" destination="Cod-DW-Qil" id="Raw-0P-oT9"/>
+                        <outlet property="S" destination="aXG-1f-iCU" id="4QT-9r-ZQ3"/>
+                        <outlet property="T" destination="XPu-0p-3T1" id="E28-ma-t3H"/>
+                        <outlet property="U" destination="nE8-b2-ICE" id="WFU-3y-ckB"/>
+                        <outlet property="V" destination="aHD-I7-4Ma" id="b4c-y7-xsg"/>
+                        <outlet property="W" destination="tmP-U2-ZNx" id="krC-gN-YqH"/>
+                        <outlet property="X" destination="zJi-JS-b6t" id="Opg-fM-Eem"/>
+                        <outlet property="Y" destination="7A7-Ic-Rk6" id="p9I-L6-80K"/>
+                        <outlet property="Z" destination="yEP-PM-ieQ" id="5l5-rT-gx7"/>
                         <outlet property="display" destination="kvF-Md-0Sh" id="TZD-vm-lIm"/>
                         <outlet property="hangManImage" destination="ru4-J1-geK" id="bmt-ta-Vb6"/>
+                        <outlet property="scoreImageView" destination="Wht-ix-Ude" id="ScU-Pe-rTH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIS-4R-EBx" userLabel="First Responder" sceneMemberID="firstResponder"/>

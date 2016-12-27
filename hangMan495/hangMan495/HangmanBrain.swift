@@ -133,6 +133,26 @@ class HangmanBrain {
     
     }
     
+    func countGuessedWords(word: String) -> Int{
+        
+        var counter = 0
+        
+        for index in 0...((word.characters.count)-1){
+            
+            let word_idx = word.index(word.startIndex, offsetBy: index)
+            
+            if String(word[word_idx]) != "_"{
+                
+                counter += 1
+                
+            }
+        }
+            
+        return counter;
+    }
+
+    
+    
 }
 
 var brain : HangmanBrain = HangmanBrain()
