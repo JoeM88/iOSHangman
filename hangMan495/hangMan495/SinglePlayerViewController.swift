@@ -17,8 +17,47 @@ class SinglePlayerViewController: UIViewController {
     var CAMOUFLAGE_WORD = ""
     
     var LIVES = 10
+    
+    var SCORE = 0
+    
+    var WORDS_GUESSED = 0
 
     @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var scoreImageView: UILabel!
+    
+    @IBOutlet weak var hangManImage: UIImageView!
+    
+    
+    
+    
+    @IBOutlet weak var A: UIButton!
+    @IBOutlet weak var B: UIButton!
+    @IBOutlet weak var C: UIButton!
+    @IBOutlet weak var D: UIButton!
+    @IBOutlet weak var E: UIButton!
+    @IBOutlet weak var F: UIButton!
+    @IBOutlet weak var G: UIButton!
+    @IBOutlet weak var H: UIButton!
+    @IBOutlet weak var I: UIButton!
+    @IBOutlet weak var J: UIButton!
+    @IBOutlet weak var K: UIButton!
+    @IBOutlet weak var L: UIButton!
+    @IBOutlet weak var M: UIButton!
+    @IBOutlet weak var N: UIButton!
+    @IBOutlet weak var O: UIButton!
+    @IBOutlet weak var P: UIButton!
+    @IBOutlet weak var Q: UIButton!
+    @IBOutlet weak var R: UIButton!
+    @IBOutlet weak var S: UIButton!
+    @IBOutlet weak var T: UIButton!
+    @IBOutlet weak var U: UIButton!
+    @IBOutlet weak var V: UIButton!
+    @IBOutlet weak var W: UIButton!
+    @IBOutlet weak var X: UIButton!
+    @IBOutlet weak var Y: UIButton!
+    @IBOutlet weak var Z: UIButton!
+    
+    
     
     override func viewDidLoad() {
         
@@ -66,15 +105,63 @@ class SinglePlayerViewController: UIViewController {
 
         CAMOUFLAGE_WORD = brain.revealLetter(word: WORD, secret_word: CAMOUFLAGE_WORD, letter: (letter:character[character.startIndex]))
         
-        display.text = brain.spaceWordOut(word: CAMOUFLAGE_WORD);
+        WORDS_GUESSED = brain.countGuessedWords(word: CAMOUFLAGE_WORD)
         
-      
+        if WORD.characters.count == WORDS_GUESSED{// condition where player wins level
+            playerWinsLever(WORDS_GUESSED:WORDS_GUESSED, sender: sender)
+        }
+
+        print("Words Guessed: ", WORDS_GUESSED)
+        
+        display.text = brain.spaceWordOut(word: CAMOUFLAGE_WORD);
         
 
     }
     
+    func playerWinsLever(WORDS_GUESSED:Int, sender: UIButton){
+        
+        SCORE += 1
+        
+        let stringScore = String(SCORE)
+        scoreImageView.text = "Score: " + stringScore
+        hangManImage.image =  UIImage(named:"1-1");
+        
+        LIVES = 10
+        
+        
+        A.setImage(UIImage(named: "Image-1"), for: .normal)
+        B.setImage(UIImage(named: "Image-2"), for: .normal)
+        C.setImage(UIImage(named: "Image-3"), for: .normal)
+        D.setImage(UIImage(named: "Image-4"), for: .normal)
+        E.setImage(UIImage(named: "Image-5"), for: .normal)
+        F.setImage(UIImage(named: "Image-6"), for: .normal)
+        G.setImage(UIImage(named: "Image-7"), for: .normal)
+        H.setImage(UIImage(named: "Image-8"), for: .normal)
+        I.setImage(UIImage(named: "Image-9"), for: .normal)
+        J.setImage(UIImage(named: "Image-10"), for: .normal)
+        K.setImage(UIImage(named: "Image-11"), for: .normal)
+        L.setImage(UIImage(named: "Image-12"), for: .normal)
+        M.setImage(UIImage(named: "Image-13"), for: .normal)
+        N.setImage(UIImage(named: "Image-14"), for: .normal)
+        O.setImage(UIImage(named: "Image-15"), for: .normal)
+        P.setImage(UIImage(named: "Image-16"), for: .normal)
+        Q.setImage(UIImage(named: "Image-17"), for: .normal)
+        R.setImage(UIImage(named: "Image-18"), for: .normal)
+        S.setImage(UIImage(named: "Image-19"), for: .normal)
+        T.setImage(UIImage(named: "Image-20"), for: .normal)
+        U.setImage(UIImage(named: "Image-21"), for: .normal)
+        V.setImage(UIImage(named: "Image-26"), for: .normal)
+        W.setImage(UIImage(named: "Image-22"), for: .normal)
+        X.setImage(UIImage(named: "Image-23"), for: .normal)
+        Y.setImage(UIImage(named: "Image-24"), for: .normal)
+        Z.setImage(UIImage(named: "Image-25"), for: .normal)
+
+        levelPasssed()
+        
+    }
+    
   
-    @IBOutlet weak var hangManImage: UIImageView!
+    
     
     func nextHangManImage(letterFound: Bool){
         
@@ -100,18 +187,6 @@ class SinglePlayerViewController: UIViewController {
             else if LIVES == 4{
                 hangManImage.image =  UIImage(named:"1-7");
             }
-//            else if LIVES == 3{
-//                hangManImage.image =  UIImage(named:"1-8");
-//            }
-//            else if LIVES == 2{
-//                hangManImage.image =  UIImage(named:"9");
-//            }
-//            else if LIVES == 1{
-//                hangManImage.image =  UIImage(named:"10");
-//            }
-//            else if LIVES == 0{
-//                hangManImage.image =  UIImage(named:"11");
-//            }
         }
         
     }
