@@ -15,6 +15,8 @@ class SinglePlayerViewController: UIViewController {
     
     var WORD = "";
     var CAMOUFLAGE_WORD = ""
+    
+    var LIVES = 10
 
     @IBOutlet weak var display: UILabel!
     
@@ -62,16 +64,56 @@ class SinglePlayerViewController: UIViewController {
         var character = [Character](letterClicked.characters)
         
 
-        
-        //let letterFound = brain.checkLetter(letter:character[character.startIndex])
-        
-        
         CAMOUFLAGE_WORD = brain.revealLetter(word: WORD, secret_word: CAMOUFLAGE_WORD, letter: (letter:character[character.startIndex]))
         
         display.text = brain.spaceWordOut(word: CAMOUFLAGE_WORD);
         
       
-       // print(letterFound)
+        
+
+    }
+    
+  
+    @IBOutlet weak var hangManImage: UIImageView!
+    
+    func nextHangManImage(letterFound: Bool){
+        
+        if letterFound == false{
+            
+            LIVES -= 1
+            
+            if LIVES == 9{
+                hangManImage.image =  UIImage(named:"2");
+            }
+            else if LIVES == 8{
+                hangManImage.image =  UIImage(named:"3");
+            }
+            else if LIVES == 7{
+                hangManImage.image =  UIImage(named:"4");
+            }
+            else if LIVES == 6{
+                hangManImage.image =  UIImage(named:"5");
+            }
+            else if LIVES == 5{
+                hangManImage.image =  UIImage(named:"6");
+            }
+            else if LIVES == 4{
+                hangManImage.image =  UIImage(named:"7");
+            }
+            else if LIVES == 3{
+                hangManImage.image =  UIImage(named:"8");
+            }
+            else if LIVES == 2{
+                hangManImage.image =  UIImage(named:"9");
+            }
+            else if LIVES == 1{
+                hangManImage.image =  UIImage(named:"10");
+            }
+            else if LIVES == 0{
+                hangManImage.image =  UIImage(named:"11");
+            }
+        }
+        
     }
     
     
@@ -83,7 +125,9 @@ class SinglePlayerViewController: UIViewController {
         var character = [Character](letterClicked.characters)
         let letter = String(character[character.startIndex])
         
-         let letterFound = brain.checkLetter(letter:character[character.startIndex])
+        let letterFound = brain.checkLetter(letter:character[character.startIndex])
+       
+        nextHangManImage(letterFound: letterFound)
         
         if letter == "a"{//saturation and tint for color all lowered on actual image not here
             if letterFound{
