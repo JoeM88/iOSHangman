@@ -331,8 +331,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="ST0-6x-1Yi"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ru4-J1-geK">
-                                <rect key="frame" x="67" y="144" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-1" translatesAutoresizingMaskIntoConstraints="NO" id="ru4-J1-geK">
+                                <rect key="frame" x="67" y="72" width="240" height="338"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -556,7 +556,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="323" height="264"/>
+        <image name="1-1" width="750" height="1334"/>
         <image name="Image-1" width="40" height="40"/>
         <image name="Image-10" width="40" height="40"/>
         <image name="Image-11" width="40" height="40"/>
