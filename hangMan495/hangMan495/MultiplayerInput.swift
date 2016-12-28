@@ -27,8 +27,12 @@ class MultiplayerInput: UIViewController {
     /*override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        //_ = input
-        //let destinationVC = segue.destination as! SinglePlayerViewController
+        if (segue.identifier == "SendInput")
+        {
+           var word = input
+           let destination = segue.destination as! SinglePlayerViewController
+           destination. = self.word
+        }
     }*/
     
     @IBOutlet weak var input: UITextField!
@@ -38,7 +42,7 @@ class MultiplayerInput: UIViewController {
             
         }
         else{
-            prepare(for: <#T##UIStoryboardSegue#>, sender: <#T##AnyObject?#>)
+            //prepare(for: <#T##UIStoryboardSegue#>, sender: <#T##AnyObject?#>)
         }
         
     }

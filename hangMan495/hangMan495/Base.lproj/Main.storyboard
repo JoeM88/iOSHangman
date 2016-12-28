@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Ip-wy-xRz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Ip-wy-xRz">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -414,6 +413,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submit:" destination="qgp-6L-V6D" eventType="touchUpInside" id="beF-nc-7cV"/>
+                                    <segue destination="2zi-1U-5NF" kind="show" identifier="SendInput" id="xVY-0H-mC6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -653,4 +653,7 @@
         <image name="Image-9" width="40" height="40"/>
         <image name="hangmanLaunchImage" width="106" height="84"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xVY-0H-mC6"/>
+    </inferredMetricsTieBreakers>
 </document>
