@@ -16,18 +16,31 @@ class ScoresViewController: UIViewController {
         let appDel: AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let context: NSManagedObjectContext = appDel.managedObjectContext
         
+        
         do{
             let request = NSFetchRequest<NSFetchRequestResult>(entityName:"Entity")
             let results = try context.fetch(request)
             
             if results.count > 0{
                 for item in results as! [NSManagedObject]{
-                    let name = item.value(forKey: "name")
-                    
-                    print(name!)
+                    //let name = item.value(forKey: "name")
+                    if(item.value(forKey: "name") != nil)
+                    {
+                        let name = item.value(forKey: "name")
+                        print(name!)
+                    }
+                    if(item.value(forKey: "date") != nil){
+                        let date = item.value(forKey: "date")
+                        print(date!)
+                    }
+                    if(item.value(forKey: "score") != nil){
+                        let score = item.value(forKey: "score")
+                        print(score!)
+                    }
                 }
             }
         }catch{
+            print("Error: \(error)")
             
         }
         

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import CoreData
 
 class SinglePlayerViewController: UIViewController {
@@ -210,31 +209,72 @@ class SinglePlayerViewController: UIViewController {
             else if LIVES == 4{// they loose
                 hangManImage.image =  UIImage(named:"1-7");
                 
-                
-                //let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                //let context = appDelegate.persistentContainer.viewContext
                 let appDel: AppDelegate = UIApplication.shared.delegate as! AppDelegate
                 let context: NSManagedObjectContext = appDel.managedObjectContext
-                
-                let username = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: context)
-                username.setValue("Sal", forKey: "name")
-                
-                do{
-                    try context.save()
                     
-                    print("Saved")
-                    
-                }catch{
-                    //
-                }
-        
                 
                 let alertController = UIAlertController(title: "Sorry, You Lost!", message: ("The word was: " + WORD), preferredStyle: .alert)
+                alertController.addTextField(configurationHandler: {(textField : UITextField!) -> Void in
+                    textField.placeholder = "Enter your name"
+                })
                 
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                alertController.addAction(defaultAction)
+                alertController.addAction(UIAlertAction(title: "Save", style: .default, handler: {
+                    alert -> Void in
+                    let textField = alertController.textFields![0] as UITextField
+                    // do something with textField
+                    let currentUsername = textField.text! as String
+                    let username = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: context)
+                    username.setValue(currentUsername, forKey: "name")
+                    
+                    
+                    do{
+                        try context.save()
+                        
+                        print("Saved name", currentUsername)
+                        
+                    }catch{
+                        fatalError("Failuer:\(error)")
+                    }
+                    
+                    //Getting the current date
+                    
+                    let date1 = Date()
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "MM.dd.yyyy"
+                    let dateResult = formatter.string(from: date1)
+                    print(dateResult)
+                    
+                    let dateEntry = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: context)
+                    dateEntry.setValue(dateResult, forKey: "date")
+                    
+                    do{
+                        try context.save()
+                        
+                        print("Saved date")
+                        
+                    }catch{
+                        //
+                    }
+                    
+                    
+                    let entryScore = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: context)
+                    entryScore.setValue(self.SCORE, forKey: "score")
+                
+                    
+                    do{
+                        try context.save()
+                        
+                        print("Saved score")
+                        
+                    }catch{
+                        //
+                    }
+                    
+                    
+                }))
                 
                 self.present(alertController, animated: true, completion: nil)
+                
                 
                 brain.resetVals()
 
