@@ -139,7 +139,7 @@ class SinglePlayerViewController: UIViewController {
         
         
         
-        SCORE += 10
+        SCORE += (10 * WORD.characters.count)
         
         let stringScore = String(SCORE)
         scoreImageView.text = "Score: " + stringScore
