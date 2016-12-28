@@ -160,7 +160,7 @@ class HangmanBrain {
     
     func setCurrentWord(word: String)
     {
-        current_word = word
+        current_word = word.lowercased()
     }
     
     
