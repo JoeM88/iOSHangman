@@ -165,8 +165,10 @@ class SinglePlayerViewController: UIViewController {
         X.setImage(UIImage(named: "Image-23"), for: .normal)
         Y.setImage(UIImage(named: "Image-24"), for: .normal)
         Z.setImage(UIImage(named: "Image-25"), for: .normal)
-
+        
+        brain.resetVals()
         levelPasssed()
+    
         
     }
     
@@ -203,6 +205,8 @@ class SinglePlayerViewController: UIViewController {
                 alertController.addAction(defaultAction)
                 
                 self.present(alertController, animated: true, completion: nil)
+                
+                brain.resetVals()
             }
         }
         
