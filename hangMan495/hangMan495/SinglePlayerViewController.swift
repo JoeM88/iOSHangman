@@ -175,9 +175,9 @@ class SinglePlayerViewController: UIViewController {
   
     
     
-    func nextHangManImage(letterFound: Bool){
+    func nextHangManImage(letterFound: Bool, letter:String, isClicked:Bool){
         
-        if letterFound == false{
+        if letterFound == false && isClicked{
             
             LIVES -= 1
             
@@ -221,9 +221,12 @@ class SinglePlayerViewController: UIViewController {
         var character = [Character](letterClicked.characters)
         let letter = String(character[character.startIndex])
         
+        var isClicked = false
+        isClicked = !(brain.getGuessedLetters().contains(Character(letter)))
         let letterFound = brain.checkLetter(letter:character[character.startIndex])
+        
        
-        nextHangManImage(letterFound: letterFound)
+        nextHangManImage(letterFound: letterFound, letter:letter, isClicked: isClicked)
         
         if letter == "a"{//saturation and tint for color all lowered on actual image not here
             if letterFound{
