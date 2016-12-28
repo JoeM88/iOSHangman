@@ -44,12 +44,13 @@ class HangmanBrain {
         let letter_lowercased = Character(String(letter).lowercased())
         if(discovered_words.contains(letter_lowercased))
         {
-            return false;
+            print("Been discovered", letter_lowercased)
+            return true;
         }
         guessed_letters.append(letter_lowercased)
         if(current_word!.contains(String(letter_lowercased)))
         {
-            
+            print("New letter", letter_lowercased)
             discovered_words.append(letter_lowercased)
             return true;
         }
@@ -149,6 +150,12 @@ class HangmanBrain {
         }
             
         return counter;
+    }
+    
+    func resetVals(){
+        
+        discovered_words.removeAll()
+        guessed_letters.removeAll()
     }
 
     
