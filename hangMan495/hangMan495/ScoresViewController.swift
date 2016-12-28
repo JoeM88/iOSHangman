@@ -8,7 +8,25 @@
 
 import UIKit
 import CoreData
-class ScoresViewController: UIViewController {
+class ScoresViewController: UIViewController, UITableViewDataSource{
+    
+    func numberOfSectionsInTableView(tableView:UITableView) -> Int{
+        
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int{
+        
+        return 5
+    }
+    
+    func tableView(_ tableView:UITableView, cellForRowAt indexPath:IndexPath)->UITableViewCell{
+        
+        var cell = UITableViewCell()
+        cell.textLabel?.text = "test"
+        return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +61,9 @@ class ScoresViewController: UIViewController {
             print("Error: \(error)")
             
         }
+        
+        
+        
         
         
 
