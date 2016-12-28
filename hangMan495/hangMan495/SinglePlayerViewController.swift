@@ -8,6 +8,8 @@
 
 import UIKit
 
+import CoreData
+
 class SinglePlayerViewController: UIViewController {
     
     
@@ -196,8 +198,27 @@ class SinglePlayerViewController: UIViewController {
             else if LIVES == 5{
                 hangManImage.image =  UIImage(named:"1-6");
             }
-            else if LIVES == 4{
+            else if LIVES == 4{// they loose
                 hangManImage.image =  UIImage(named:"1-7");
+                
+                
+                //let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                //let context = appDelegate.persistentContainer.viewContext
+                let appDel: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                let context: NSManagedObjectContext = appDel.managedObjectContext
+                
+                let username = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: context)
+                username.setValue("Sal", forKey: "name")
+                
+                do{
+                    try context.save()
+                    
+                    print("Saved")
+                    
+                }catch{
+                    //
+                }
+        
                 
                 let alertController = UIAlertController(title: "Sorry, You Lost!", message: ("The word was: " + WORD), preferredStyle: .alert)
                 
@@ -207,6 +228,9 @@ class SinglePlayerViewController: UIViewController {
                 self.present(alertController, animated: true, completion: nil)
                 
                 brain.resetVals()
+                
+                
+                
             }
         }
         
