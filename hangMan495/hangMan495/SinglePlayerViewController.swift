@@ -15,8 +15,49 @@ class SinglePlayerViewController: UIViewController {
     
     var WORD = "";
     var CAMOUFLAGE_WORD = ""
+    
+    var LIVES = 10
+    
+    var SCORE = 0
+    
+    var WORDS_GUESSED = 0
 
     @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var scoreImageView: UILabel!
+    
+    @IBOutlet weak var hangManImage: UIImageView!
+    
+    
+    
+    
+    @IBOutlet weak var A: UIButton!
+    @IBOutlet weak var B: UIButton!
+    @IBOutlet weak var C: UIButton!
+    @IBOutlet weak var D: UIButton!
+    @IBOutlet weak var E: UIButton!
+    @IBOutlet weak var F: UIButton!
+    @IBOutlet weak var G: UIButton!
+    @IBOutlet weak var H: UIButton!
+    @IBOutlet weak var I: UIButton!
+    @IBOutlet weak var J: UIButton!
+    @IBOutlet weak var K: UIButton!
+    @IBOutlet weak var L: UIButton!
+    @IBOutlet weak var M: UIButton!
+    @IBOutlet weak var N: UIButton!
+    @IBOutlet weak var O: UIButton!
+    @IBOutlet weak var P: UIButton!
+    @IBOutlet weak var Q: UIButton!
+    @IBOutlet weak var R: UIButton!
+    @IBOutlet weak var S: UIButton!
+    @IBOutlet weak var T: UIButton!
+    @IBOutlet weak var U: UIButton!
+    @IBOutlet weak var V: UIButton!
+    @IBOutlet weak var W: UIButton!
+    @IBOutlet weak var X: UIButton!
+    @IBOutlet weak var Y: UIButton!
+    @IBOutlet weak var Z: UIButton!
+    
+    
     
     override func viewDidLoad() {
         
@@ -62,16 +103,109 @@ class SinglePlayerViewController: UIViewController {
         var character = [Character](letterClicked.characters)
         
 
-        
-        //let letterFound = brain.checkLetter(letter:character[character.startIndex])
-        
-        
         CAMOUFLAGE_WORD = brain.revealLetter(word: WORD, secret_word: CAMOUFLAGE_WORD, letter: (letter:character[character.startIndex]))
+        
+        WORDS_GUESSED = brain.countGuessedWords(word: CAMOUFLAGE_WORD)
+        
+        if WORD.characters.count == WORDS_GUESSED{// condition where player wins level
+            playerWinsLever(WORDS_GUESSED:WORDS_GUESSED, sender: sender)
+        }
+
+        print("Words Guessed: ", WORDS_GUESSED)
         
         display.text = brain.spaceWordOut(word: CAMOUFLAGE_WORD);
         
-      
-       // print(letterFound)
+
+    }
+    
+    func playerWinsLever(WORDS_GUESSED:Int, sender: UIButton){
+        
+        
+        let alertController = UIAlertController(title: "You Passed The Level!", message: ("The word you guessed was: " + WORD), preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(defaultAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+        
+        
+        SCORE += 10
+        
+        let stringScore = String(SCORE)
+        scoreImageView.text = "Score: " + stringScore
+        hangManImage.image =  UIImage(named:"1-1");
+        
+        LIVES = 10
+        
+        
+        A.setImage(UIImage(named: "Image-1"), for: .normal)
+        B.setImage(UIImage(named: "Image-2"), for: .normal)
+        C.setImage(UIImage(named: "Image-3"), for: .normal)
+        D.setImage(UIImage(named: "Image-4"), for: .normal)
+        E.setImage(UIImage(named: "Image-5"), for: .normal)
+        F.setImage(UIImage(named: "Image-6"), for: .normal)
+        G.setImage(UIImage(named: "Image-7"), for: .normal)
+        H.setImage(UIImage(named: "Image-8"), for: .normal)
+        I.setImage(UIImage(named: "Image-9"), for: .normal)
+        J.setImage(UIImage(named: "Image-10"), for: .normal)
+        K.setImage(UIImage(named: "Image-11"), for: .normal)
+        L.setImage(UIImage(named: "Image-12"), for: .normal)
+        M.setImage(UIImage(named: "Image-13"), for: .normal)
+        N.setImage(UIImage(named: "Image-14"), for: .normal)
+        O.setImage(UIImage(named: "Image-15"), for: .normal)
+        P.setImage(UIImage(named: "Image-16"), for: .normal)
+        Q.setImage(UIImage(named: "Image-17"), for: .normal)
+        R.setImage(UIImage(named: "Image-18"), for: .normal)
+        S.setImage(UIImage(named: "Image-19"), for: .normal)
+        T.setImage(UIImage(named: "Image-20"), for: .normal)
+        U.setImage(UIImage(named: "Image-21"), for: .normal)
+        V.setImage(UIImage(named: "Image-26"), for: .normal)
+        W.setImage(UIImage(named: "Image-22"), for: .normal)
+        X.setImage(UIImage(named: "Image-23"), for: .normal)
+        Y.setImage(UIImage(named: "Image-24"), for: .normal)
+        Z.setImage(UIImage(named: "Image-25"), for: .normal)
+
+        levelPasssed()
+        
+    }
+    
+  
+    
+    
+    func nextHangManImage(letterFound: Bool){
+        
+        if letterFound == false{
+            
+            LIVES -= 1
+            
+            if LIVES == 9{
+                hangManImage.image =  UIImage(named:"1-2");
+            }
+            else if LIVES == 8{
+                hangManImage.image =  UIImage(named:"1-3");
+            }
+            else if LIVES == 7{
+                hangManImage.image =  UIImage(named:"1-4");
+            }
+            else if LIVES == 6{
+                hangManImage.image =  UIImage(named:"1-5");
+            }
+            else if LIVES == 5{
+                hangManImage.image =  UIImage(named:"1-6");
+            }
+            else if LIVES == 4{
+                hangManImage.image =  UIImage(named:"1-7");
+                
+                let alertController = UIAlertController(title: "Sorry, You Lost!", message: ("The word was: " + WORD), preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+        
     }
     
     
@@ -83,7 +217,9 @@ class SinglePlayerViewController: UIViewController {
         var character = [Character](letterClicked.characters)
         let letter = String(character[character.startIndex])
         
-         let letterFound = brain.checkLetter(letter:character[character.startIndex])
+        let letterFound = brain.checkLetter(letter:character[character.startIndex])
+       
+        nextHangManImage(letterFound: letterFound)
         
         if letter == "a"{//saturation and tint for color all lowered on actual image not here
             if letterFound{
