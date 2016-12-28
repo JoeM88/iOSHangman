@@ -22,6 +22,7 @@ class SinglePlayerViewController: UIViewController {
     
     var WORDS_GUESSED = 0
 
+    var multiplayer = false
     @IBOutlet weak var display: UILabel!
     @IBOutlet weak var scoreImageView: UILabel!
     
@@ -62,7 +63,7 @@ class SinglePlayerViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        print(WORD + "------")
         levelPasssed()
         // Do any additional setup after loading the view.
     }
@@ -83,9 +84,16 @@ class SinglePlayerViewController: UIViewController {
     }
     */
     func levelPasssed() {
-        
-        WORD = brain.generateWord()
-        // print(word)
+        print(WORD + " Test")
+        if WORD == ""{
+            WORD = brain.generateWord()
+        }
+        else
+        {
+            brain.setCurrentWord(word: WORD)
+            multiplayer = true
+        }
+         //print(WORD)
         
         CAMOUFLAGE_WORD = brain.camouflage(word: WORD)
         display.text = brain.spaceWordOut(word: CAMOUFLAGE_WORD)
@@ -167,6 +175,7 @@ class SinglePlayerViewController: UIViewController {
         Z.setImage(UIImage(named: "Image-25"), for: .normal)
         
         brain.resetVals()
+        WORD = brain.generateWord()
         levelPasssed()
     
         
@@ -207,12 +216,17 @@ class SinglePlayerViewController: UIViewController {
                 self.present(alertController, animated: true, completion: nil)
                 
                 brain.resetVals()
+                //WORD = ""
+                //WORD = brain.generateWord()
+                
             }
         }
         
     }
     
     
+    @IBAction func ExitGame(_ sender: Any) {
+    }
 
     
     @IBAction func changeLetterColor(_ sender: UIButton) {

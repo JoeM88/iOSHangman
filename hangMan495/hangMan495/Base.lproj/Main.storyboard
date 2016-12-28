@@ -321,7 +321,8 @@
                                     <color key="titleColor" red="1" green="0.059605572916622496" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ST0-6x-1Yi"/>
+                                    <action selector="ExitGame:" destination="2zi-1U-5NF" eventType="touchUpInside" id="uAf-Va-fDp"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Quit" id="ST0-6x-1Yi"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-1" translatesAutoresizingMaskIntoConstraints="NO" id="ru4-J1-geK">
