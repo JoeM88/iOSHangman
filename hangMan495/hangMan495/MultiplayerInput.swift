@@ -21,15 +21,27 @@ class MultiplayerInput: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        //_ = input
+        //let destinationVC = segue.destination as! SinglePlayerViewController
+    }*/
+    
+    @IBOutlet weak var input: UITextField!
+    
+    @IBAction func submit(_ sender: Any) {
+        if input == nil{
+            
+        }
+        else{
+            prepare(for: <#T##UIStoryboardSegue#>, sender: <#T##AnyObject?#>)
+        }
+        
     }
-    */
+    
 
 }
