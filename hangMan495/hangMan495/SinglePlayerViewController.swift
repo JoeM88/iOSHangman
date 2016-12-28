@@ -269,11 +269,13 @@ class SinglePlayerViewController: UIViewController {
                     }catch{
                         //
                     }
-                    
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainScreen")
+                    self.present(vc!, animated: true, completion: nil)
                     
                 }))
                 
                 self.present(alertController, animated: true, completion: nil)
+                
                 
                 
                 brain.resetVals()
