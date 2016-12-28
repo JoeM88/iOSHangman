@@ -637,6 +637,7 @@
 			baseConfigurationReference = D8F88331071DDD5233E51D28 /* Pods-hangMan495.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hangMan495/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.csumb.cst495.moli9479.hangMan495;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -649,6 +650,7 @@
 			baseConfigurationReference = 65572F7C42BDE300F57F91A5 /* Pods-hangMan495.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hangMan495/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.csumb.cst495.moli9479.hangMan495;
 				PRODUCT_NAME = "$(TARGET_NAME)";
