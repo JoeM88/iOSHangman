@@ -157,7 +157,11 @@ class HangmanBrain {
         discovered_words.removeAll()
         guessed_letters.removeAll()
     }
-
+    
+    func setCurrentWord(word: String)
+    {
+        current_word = word
+    }
     
     
 }

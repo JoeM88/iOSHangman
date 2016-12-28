@@ -8,6 +8,8 @@
 
 import UIKit
 
+import CoreData
+
 class SinglePlayerViewController: UIViewController {
     
     
@@ -22,6 +24,7 @@ class SinglePlayerViewController: UIViewController {
     
     var WORDS_GUESSED = 0
 
+    var multiplayer = false
     @IBOutlet weak var display: UILabel!
     @IBOutlet weak var scoreImageView: UILabel!
     
@@ -62,7 +65,7 @@ class SinglePlayerViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        print(WORD + "------")
         levelPasssed()
         // Do any additional setup after loading the view.
     }
@@ -83,9 +86,16 @@ class SinglePlayerViewController: UIViewController {
     }
     */
     func levelPasssed() {
-        
-        WORD = brain.generateWord()
-        // print(word)
+        print(WORD + " Test")
+        if WORD == ""{
+            WORD = brain.generateWord()
+        }
+        else
+        {
+            brain.setCurrentWord(word: WORD)
+            multiplayer = true
+        }
+         //print(WORD)
         
         CAMOUFLAGE_WORD = brain.camouflage(word: WORD)
         display.text = brain.spaceWordOut(word: CAMOUFLAGE_WORD)
@@ -167,6 +177,7 @@ class SinglePlayerViewController: UIViewController {
         Z.setImage(UIImage(named: "Image-25"), for: .normal)
         
         brain.resetVals()
+        WORD = brain.generateWord()
         levelPasssed()
     
         
@@ -175,9 +186,9 @@ class SinglePlayerViewController: UIViewController {
   
     
     
-    func nextHangManImage(letterFound: Bool){
+    func nextHangManImage(letterFound: Bool, letter:String, isClicked:Bool){
         
-        if letterFound == false{
+        if letterFound == false && isClicked{
             
             LIVES -= 1
             
@@ -196,8 +207,27 @@ class SinglePlayerViewController: UIViewController {
             else if LIVES == 5{
                 hangManImage.image =  UIImage(named:"1-6");
             }
-            else if LIVES == 4{
+            else if LIVES == 4{// they loose
                 hangManImage.image =  UIImage(named:"1-7");
+                
+                
+                //let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                //let context = appDelegate.persistentContainer.viewContext
+                let appDel: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                let context: NSManagedObjectContext = appDel.managedObjectContext
+                
+                let username = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: context)
+                username.setValue("Sal", forKey: "name")
+                
+                do{
+                    try context.save()
+                    
+                    print("Saved")
+                    
+                }catch{
+                    //
+                }
+        
                 
                 let alertController = UIAlertController(title: "Sorry, You Lost!", message: ("The word was: " + WORD), preferredStyle: .alert)
                 
@@ -207,12 +237,19 @@ class SinglePlayerViewController: UIViewController {
                 self.present(alertController, animated: true, completion: nil)
                 
                 brain.resetVals()
+
+                //WORD = ""
+                //WORD = brain.generateWord()
+
+                
             }
         }
         
     }
     
     
+    @IBAction func ExitGame(_ sender: Any) {
+    }
 
     
     @IBAction func changeLetterColor(_ sender: UIButton) {
@@ -221,9 +258,12 @@ class SinglePlayerViewController: UIViewController {
         var character = [Character](letterClicked.characters)
         let letter = String(character[character.startIndex])
         
+        var isClicked = false
+        isClicked = !(brain.getGuessedLetters().contains(Character(letter)))
         let letterFound = brain.checkLetter(letter:character[character.startIndex])
+        
        
-        nextHangManImage(letterFound: letterFound)
+        nextHangManImage(letterFound: letterFound, letter:letter, isClicked: isClicked)
         
         if letter == "a"{//saturation and tint for color all lowered on actual image not here
             if letterFound{
